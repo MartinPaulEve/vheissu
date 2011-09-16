@@ -17,7 +17,10 @@ from BeautifulSoup import BeautifulSoup
 import models
 
 
-
+"""
+This function is designed to import the source from http://www.vheissu.net/biblio/alles.php into a relational format.
+The document referenced in the "with open" block contains the source from this page.
+"""
 def run_import(request):
     
     article_regex = '\s*(.+?)\.\s*"\s*<strong>\s*(.+?)\s*</strong>\s*\."\s*<i>\s*(.+?)\s*</i>\s*(.+?)\s*\((\d+?)\):\s*(.+?)\.\s*<i>\s*(.+?)\s*</i>'
